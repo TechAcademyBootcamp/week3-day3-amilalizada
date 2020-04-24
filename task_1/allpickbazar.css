@@ -592,12 +592,6 @@
     flex-direction: column;
 } */
 
-.modaliki .modal {
-    width: 900px;
-    height: 600px;
-    z-index: 100000;
-}
-
 .modaliki .modal-dialog {
     max-width: 900px;
     display: flex;
