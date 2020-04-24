@@ -61,6 +61,21 @@ body {
     /* z-index: 10000; */
 }
 
+#inpop-product {
+    width: 100% !important;
+    height: 110px !important;
+    border: 1px solid rgb(234, 234, 234);
+    padding: 4px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    border-radius: 2px;
+}
+
+#inpop-product img {
+    width: auto !important;
+    height: 100px !important;
+}
+
 
 /* .popproducts .h3tag {
     font-family: 'Lato', sans-serif;

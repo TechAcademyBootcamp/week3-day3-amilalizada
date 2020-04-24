@@ -15,13 +15,10 @@ for (var i = 0; i < cartButton.length; i++) {
         var card_pcs = parentElement.getElementsByClassName('cartcenter')[0].innerHTML;
         console.log(card_price);
 
-        // var es = document.getElementById('card-products').children;
-        // for (var i = 0; i < es.length; i++) {
-        //     if (es[i].getAttribute('products-title') == card_title) {
-        //         return false;
-        //     }
-        // }
+
         document.getElementsByClassName('no-products')[0].classList.add(`d-none`);
+
+
         var es = Array.from(document.getElementById('card-products').children).filter((element) => {
             return element.getAttribute('products-title') == card_title;
         });
@@ -34,6 +31,7 @@ for (var i = 0; i < cartButton.length; i++) {
             </div>
             <div class="col-md-8">
                 <div class="card-body">
+                <span class="count"></span>
                     <h5 class="card-title jstitle">${card_title}</h5>
                     <p class="card-text jsprice">${card_price}</p>
                     <p class="card-text jspcs">${card_pcs}</p>
