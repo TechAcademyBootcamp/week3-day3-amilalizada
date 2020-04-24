@@ -1,29 +1,28 @@
-var cartButton = document.getElementsByClassName('add_cart');
-// console.log(cartButton);
-
-for (var i = 0; i < cartButton.length; i++) {
-    cartButton[i].addEventListener('click', function() {;
-        var parentElement = this.closest('.card');
-
-        var card_image = parentElement.getElementsByClassName('card-img-top')[0].getAttribute("src");
-
-
-
-        var card_title = parentElement.getElementsByClassName('card-title')[0].innerHTML;
-
-        var card_price = parentElement.getElementsByClassName('card-price')[0].innerHTML;
-        var card_pcs = parentElement.getElementsByClassName('cartcenter')[0].innerHTML;
-        console.log(card_price);
+var card_all = document.getElementsByClassName('card');
+for (var i = 0; i < card_all.length; i++) {
+    card_all[i].addEventListener('click', function(event) {
+        var clicked_element = event.target;
+        // console.log(clicked_element);
+        console.log(clicked_element.closest('.add_cart'));
+        if (clicked_element.closest('.add_cart') != null) {
+            // console.log('nese');
+            // var childiren_1 = this.children
+            var card_image = this.getElementsByClassName('card-img-top')[0].getAttribute("src");
+            var card_title = this.getElementsByClassName('card-title')[0].innerHTML;
+            var card_price = this.getElementsByClassName('card-price')[0].innerHTML;
+            var card_pcs = this.getElementsByClassName('cartcenter')[0].innerHTML;
 
 
-        document.getElementsByClassName('no-products')[0].classList.add(`d-none`);
 
 
-        var es = Array.from(document.getElementById('card-products').children).filter((element) => {
-            return element.getAttribute('products-title') == card_title;
-        });
-        if (es.length == 0) {
-            document.getElementById('card-products').innerHTML += `<div class="card" products-title="${card_title}">
+            document.getElementsByClassName('no-products')[0].classList.add(`d-none`);
+
+
+            var es = Array.from(document.getElementById('card-products').children).filter((element) => {
+                return element.getAttribute('products-title') == card_title;
+            });
+            if (es.length == 0) {
+                document.getElementById('card-products').innerHTML += `<div class="card" products-title="${card_title}">
         <div class="row no-gutters">
             <div class="col-md-4">
                 <img src="${card_image}"class="card-img" alt="..." >
@@ -39,6 +38,12 @@ for (var i = 0; i < cartButton.length; i++) {
             </div>
         </div>
     </div>`
+
+            }
+        } else {
+            document.getElementsByClassName('btn-primary')[0].click();
+            console.log(document.getElementsByClassName('btn-primary'));
+
         }
     });
 
