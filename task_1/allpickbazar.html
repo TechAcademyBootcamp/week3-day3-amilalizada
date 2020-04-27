@@ -352,7 +352,7 @@
             </div>
             <div class="backet col">
                 <div class="bcktup">
-                    <span><svg xmlns="http://www.w3.org/2000/svg" width="12.686" height="16" viewBox="0 0 12.686 16">
+                    <span id="item-count-2"><svg xmlns="http://www.w3.org/2000/svg" width="12.686" height="16" viewBox="0 0 12.686 16">
                             <g data-name="Group 2704" transform="translate(-27.023 -2)">
                                 <g data-name="Group 17" transform="translate(27.023 5.156)">
                                     <g data-name="Group 16">
@@ -372,7 +372,7 @@
                         </svg>0 item</span>
                 </div>
                 <div class="bcktdown">
-                    <span>$ 0.00</span>
+                    <span id="summa-1">$ 0.00</span>
                 </div>
             </div>
             <div class="inbacket">
@@ -398,7 +398,7 @@
                                 </g>
                             </g>
                         </svg>
-                        <span>0 item</span>
+                        <span id="item-count-1">0 item</span>
                     </div>
                     <div class="closebacket">
                         <svg> xmlns="http://www.w3.org/2000/svg" width="10.003" height="10"
@@ -437,7 +437,7 @@
                         <button class="CartItemCardstyle__CheckoutButton-sc-1qwq92r-14 hzsOvT">
                             <a class="CartItemCardstyle__Title-sc-1qwq92r-16 iFXawR">Checkout
                             </a>
-                            <span class="CartItemCardstyle__PriceBox-sc-1qwq92r-17 bNludf">
+                            <span id="summa-2">
                                 $0.00
                             </span>
                         </button>
@@ -707,8 +707,8 @@
         </div>
         <div class="prdctright col-9 ">
             <div class="forsale row ">
-                <button type="button" style="display:block;" class="btn btn-primary" data-toggle="modal " data-target="#exampleModal">
-            Modal</button>
+                <button type="button" style="display:none;" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                    Modal</button>
                 <div class=" col-lg-3 col-md-4 col-sm-6 col-12 mb-4 ">
                     <div class="card h-100 ">
                         <img src="apineapple_thumb.png " class="card-img-top " alt="... ">
@@ -767,7 +767,7 @@
                         <img src="pepper_thumb.png " class="card-img-top " alt="... ">
                         <div class="card-body ">
                             <h5 class="card-title ">pepper</h5>
-                            <span class="cartcenter ">8pc(s)</span>
+                            <span class="cartcenter "> 8pc(s)</span>
                             <div class="cartdown ">
                                 <span class="card-price ">$8</span>
                                 <div class="downright add_cart ">
@@ -866,7 +866,7 @@
                         </div>
                     </div>
                 </div>
-                <div class=" col-lg-3 col-md-4 col-sm-6 col-12 mb-4 ">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
                     <div class=" card h-100 ">
                         <img src=" oranges_thumb.png " class=" card-img-top " alt=" ... ">
                         <div class="card-body ">
@@ -898,7 +898,7 @@
                             <h5 class=" card-title ">Card title</h5>
                             <span class=" cartcenter ">8pc(s)</span>
                             <div class=" cartdown ">
-                                <span class="card-price ">$8</span>
+                                <span class="card-price">8</span>
                                 <div class=" downright add_cart ">
                                     <span>
                                         <svg xmlns=" http://www.w3.org/2000/svg " width=" 14.4 " height=" 12 "
@@ -981,7 +981,7 @@
         </div>
     </div>
     <div class="modalbir ">
-        <div class="modal fade " id="Join " tabindex="-1 " role="dialog " aria-labelledby="exampleModalScrollableTitle " aria-hidden="true ">
+        <div class="modal fade" id="Join" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-scrollable " role="document ">
                 <div class="modal-content ">
                     <div class="modal-header ">
@@ -1014,14 +1014,14 @@
         </div>
     </div>
 
-    <!-- <script>
+    <script>
         document.querySelector('.backet').addEventListener('click', function() {
             document.querySelector('.inbacket').classList.toggle('show');
         })
         document.querySelector('.closebacket').addEventListener('click', function() {
             document.querySelector('.inbacket').classList.toggle('show');
         })
-    </script> -->
+    </script>
 
 
 

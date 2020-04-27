@@ -481,6 +481,7 @@
     top: 0;
     transition: 1s;
     display: none;
+    overflow-y: scroll;
 }
 
 .show {
@@ -724,4 +725,10 @@
 
 .jsprice {
     color: #009e7f;
+}
+
+.fortotal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
